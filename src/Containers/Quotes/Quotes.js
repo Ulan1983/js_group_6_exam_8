@@ -9,7 +9,7 @@ class Quotes extends Component {
 		quotes: []
 	};
 
-	requestData = async () => {
+	loadData = async () => {
 		let url = '/quotes.json';
 
 		if (this.props.match.params.name) {
@@ -19,23 +19,24 @@ class Quotes extends Component {
 
 		if (response.data) {
 			this.setState({quotes: response.data});
+		} else {
+			this.setState({quotes: ''});
 		}
 	};
 
 	async componentDidMount() {
-		this.requestData();
+		this.loadData();
 	}
 
 	componentDidUpdate(prevProps) {
 		if (prevProps.match.params.name !== this.props.match.params.name) {
-			return this.requestData();
+			return this.loadData();
 		}
 	}
 
 	deleteQuote = async (id) => {
 		await axiosQuotes.delete('/quotes/' + id + '.json');
-		this.setState({quotes: '' });
-		this.props.history.replace('/');
+		this.loadData();
 	};
 	render() {
 		return (
