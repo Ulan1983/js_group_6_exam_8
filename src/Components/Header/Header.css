@@ -1,0 +1,14 @@
+.header {
+	display: flex;
+	margin: 20px;
+}
+
+.main_nav {
+	margin-left: 200px;
+}
+
+.main_nav a {
+	margin-left: 50px;
+	text-decoration: none;
+	color: #000;
+}

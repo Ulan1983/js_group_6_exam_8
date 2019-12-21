@@ -20,8 +20,13 @@ class NewQuote extends Component {
 			category: this.state.category
 		};
 
-		await axiosQuotes.post('/quotes.json', newQuote);
-		this.props.history.push('/');
+		if (this.state.author !== '' && this.state.text !== '') {
+			await axiosQuotes.post('/quotes.json', newQuote);
+			this.props.history.push('/');
+		} else {
+			alert('Please fill out all required fields!');
+		}
+
 	};
 	render() {
 		return (
