@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Header from "./Components/Header/Header";
+import Quotes from "./Containers/Quotes/Quotes";
+import NewQuote from "./Containers/NewQuote/NewQuote";
 
 function App() {
   return (
     <BrowserRouter>
+      <Header/>
       <Switch>
-
+        <Route path="/" exact component={Quotes}/>
+        <Route path="/add-quote" component={NewQuote}/>
       </Switch>
     </BrowserRouter>
   );

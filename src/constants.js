@@ -1,8 +1,1 @@
-export const CATEGORIES = [
-	{title: 'All', id: 'all'},
-	{title: 'Star Wars', id: 'star-wars'},
-	{title: 'Famous people', id: 'famous-people'},
-	{title: 'Saying', id: 'saying'},
-	{title: 'Humour', id: 'humour'},
-	{title: 'Motivational', id: 'motivational'}
-];
+export const CATEGORIES = ['Star Wars', 'Famous people', 'Saying', 'Humour', 'Motivational'];

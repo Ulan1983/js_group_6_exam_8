@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css';
 import {NavLink} from "react-router-dom";
 
 const Header = () => {
@@ -8,7 +7,7 @@ const Header = () => {
 			<div className="logo">Quotes Central</div>
 			<nav className="main_nav">
 				<NavLink to="/">Quotes</NavLink>
-				<NavLink to="/quotes/submit">Submit new quote</NavLink>
+				<NavLink to="/add-quote">Submit new quote</NavLink>
 			</nav>
 		</header>
 	);
