@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axiosQuotes from "../../axios-quotes";
 import {CATEGORIES} from "../../constants";
+import './EditQuote.css';
 
 
 class EditQuote extends Component {

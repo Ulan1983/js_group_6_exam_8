@@ -14,6 +14,7 @@ function App() {
         <Route path="/" exact component={Quotes}/>
         <Route path="/add-quote" component={NewQuote}/>
         <Route path="/quotes/:id/edit" component={EditQuote}/>
+        <Route path="/quotes/:name" component={Quotes}/>
       </Switch>
     </BrowserRouter>
   );

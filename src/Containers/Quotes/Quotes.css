@@ -1,0 +1,42 @@
+.page {
+	display: flex;
+}
+
+.page_div {
+	width: 35%;
+}
+.page_ul {
+	list-style: none;
+}
+
+.page_li {
+	margin-top: 10px;
+}
+
+.page_ul a {
+	text-decoration: none;
+	color: #000;
+}
+
+.quotes {
+	margin: 20px;
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	width: 65%;
+}
+.btn {
+	padding: 5px 10px;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.quotes a {
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 20px;
+	padding: 4px 10px;
+	background: lightgrey;
+}
